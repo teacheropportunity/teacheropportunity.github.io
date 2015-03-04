@@ -1,0 +1,141 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+ }
+
+body {
+ 	height: 100%;
+ 	width: 100%;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix {
+	display: inline-block; 
+}
+
+/* LAYOUT */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 64px;
+}
+
+/* TYPOGRAPHY */
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Merriweather', serif;
+	text-align: center;
+	line-height: 2;
+	max-width: 780px;
+}
+h1, h2, h3 {
+	font-weight: 700;
+}
+h1 {
+	font-size: 36px;
+}
+h4 {
+	font-weight: 300;
+}
+p {
+	line-height: 1.5;
+}
+strong {
+	font-weight: 700;
+}
+em {
+	font-style: italic;
+	font-size: 12px;
+	line-height: 2;
+}
+
+/* SECTIONS */
+.section-splash {
+	width: 100%;
+	height: 100vh;
+	padding: 16px;
+	background-image: url(../images/teacher-with-students.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.section-splash h1 {
+	padding: 24px;
+	display: inline;
+	background: #52D2C4;
+	color: white;
+}
+.logo {
+	margin: 16px;
+}
+.learn-more-wrapper {
+	background: #F37070;
+	height: 78px;
+	width: 160px;
+	position: absolute;
+	bottom: 0;
+	margin-left: 50%;
+	left: -80px;
+	border-radius: 100px 100px 0 0;
+}
+.learn-more-text-wrapper {
+	position: relative;
+}
+.learn-more-wrapper span {
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	color: white;
+	position: absolute;
+	width: 96px;
+	height: 70px;
+	margin-top: 50%;
+	top: -48px;
+	left: 35px;
+
+}
+
+/* INTRO */
+.intro-row {
+	max-width: 626px;
+	margin: 0 auto;
+	position: relative;
+}
+.intro-row:first-of-type {
+	margin-top: 64px;
+}
+.intro-illustration-wrapper {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+}
+.intro-illustration-wrapper img {
+	width: 100%;
+}
+.intro-content {
+	margin-left: 120px;
+}
+
+
+.instructions {
+	/*display: none;*/
+}
+.is-visible {
+	display: block;
+}
