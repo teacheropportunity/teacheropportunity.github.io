@@ -410,6 +410,9 @@ em {
 	h5, p {
 		font-size: 14px;
 	}
+	.section-splash {
+		height: 95vh;
+	}
 
 	/* INTRO */
 	.intro-illustration-wrapper {
