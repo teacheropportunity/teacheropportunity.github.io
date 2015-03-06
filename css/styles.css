@@ -35,6 +35,7 @@ body {
 body {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
+	color: #545454;
 }
 
 h1, h2, h3, h4 {
@@ -47,6 +48,9 @@ h1, h2, h3 {
 }
 h1 {
 	font-size: 36px;
+}
+h3 {
+	font-size: 18px;
 }
 h4 {
 	font-weight: 300;
@@ -73,15 +77,33 @@ em {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	text-align: center;
 }
-.section-splash h1 {
+/*.section-splash h1 {
 	padding: 24px;
 	display: inline;
 	background: #52D2C4;
 	color: white;
+}*/
+.headline-wrapper {
+	margin-top: 300px;
+}
+.headline {
+	font-family: 'Merriweather', serif;
+	line-height: 2;
+	font-size: 36px;
+	background: #52D2C4;
+	display: inline-block;
+	margin: 0 auto;
+	clear: both;
+	padding: 16px;
+	background: #52D2C4;
+	color: white;
+	font-weight: 700;
 }
 .logo {
-	margin: 16px;
+	position: absolute;
+	left: 16px;
 }
 .learn-more-wrapper {
 	background: #F37070;
@@ -146,8 +168,8 @@ em {
 .section-howItWorks {
 	background: #5ED3C4;
 	position: relative;
-	padding: 48px;
-	min-height: 1000px;
+	padding: 48px 16px;
+	min-height: 900px;
 }
 .section-howItWorks h1 {
 	color: #32756C;
@@ -202,7 +224,7 @@ em {
 	background: #81CFC5;
 	color: white;
 }
-.steps li>a.is-active {
+.steps li>a:active, .steps li>a.is-active {
 	background: #42978C;
 	color: white;
 }
@@ -248,12 +270,13 @@ em {
 .section-getStarted {
 	background: #FFA54B;
 	text-align: center;
-	padding: 48px;
+	padding: 64px;
 }
 .section-getStarted h2 {
 	color: white;
 	font-size: 24px;
 	margin-bottom: 18px;
+	font-weight: 900;
 }
 .primary-cta {
 	background: #6ED171;
@@ -268,12 +291,41 @@ em {
 	display: inline-block;
 	margin: 0 auto;
 	margin-bottom: 12px;
-
+	transition: all .3s;
+}
+.primary-cta:hover {
+	background: #65BA67;
+}
+.primary-cta:active {
+	background: #4F9E51;
 }
 
 /* PARTNERS */
+.section-partners {
+	padding: 80px;
+	color: #545454;
+	border-left: 8px solid #F37070;
+}
 .logo-wall {
-	max-width: 960px;
+	max-width: 640px;
+	display: block;
+	margin: 48px auto 0;
+}
+
+/* CONTACT */
+.section-contact {
+	background: #ECEAEA;
+	padding: 16px;
+	text-align: center;
+}
+.section-contact p {
+	font-weight: 400;
+	font-size: 14px;
+}
+.section-contact a {
+	color: #329FD8;
+	text-decoration: none;
+	border-bottom: 2px dotted;
 }
 
 /* RESPONSIVE */
