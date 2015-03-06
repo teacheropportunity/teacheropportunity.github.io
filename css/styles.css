@@ -431,6 +431,11 @@ em {
 	}
 }
 @media screen and (max-width: 360px) {
+	.primary-cta img {
+		display: none;
+	}
+}
+@media screen and (max-width: 360px) {
 	.container, .medium-container, .large-container, .section-partners {
 		padding: 24px;
 	}
