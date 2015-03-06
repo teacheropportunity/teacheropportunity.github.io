@@ -9,4 +9,8 @@ $(function(){
 		} else {
 		}
 	});
+
+	$('.ia-faq-trigger').on('click', function(e){
+		$('.ia-faq').show();
+	})
 })

@@ -26,6 +26,11 @@ body {
 	margin: 0 auto;
 	padding: 64px;
 }
+.medium-container {
+	max-width: 640px;
+	padding: 48px;
+	margin: 0 auto;
+}
 .large-container {
 	max-width: 960px;
 	margin: 0 auto;
@@ -38,25 +43,29 @@ body {
 	color: #545454;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	font-family: 'Merriweather', serif;
 	text-align: center;
 	line-height: 2;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-weight: 700;
 }
 h1 {
 	font-size: 36px;
 }
+h2 {
+	font-size: 24px;
+}
 h3 {
 	font-size: 18px;
 }
-h4 {
+h5 {
 	font-weight: 300;
 }
 p {
 	line-height: 1.5;
+	font-weight: 400;
 }
 strong {
 	font-weight: 700;
@@ -163,6 +172,9 @@ em {
 	margin-left: 130px;
 	max-width: 438px;
 }
+.intro-content p {
+	font-weight: 300;
+}
 
 /* HOW IT WORKS */
 .section-howItWorks {
@@ -253,7 +265,6 @@ em {
 	font-size: 14px;
 	line-height: 24px;
 	margin-bottom: 16px;
-	font-weight: 400;
 	color: #35766C;
 	margin-left: 8px;
 }
@@ -274,7 +285,6 @@ em {
 }
 .section-getStarted h2 {
 	color: white;
-	font-size: 24px;
 	margin-bottom: 18px;
 	font-weight: 900;
 }
@@ -319,13 +329,34 @@ em {
 	text-align: center;
 }
 .section-contact p {
-	font-weight: 400;
 	font-size: 14px;
 }
-.section-contact a {
+.section-contact a, .section-faq a {
 	color: #329FD8;
 	text-decoration: none;
 	border-bottom: 2px dotted;
 }
+
+/* FAQ */
+.section-faq {
+	display: none;
+	background: #ECEAEA;
+}
+.section-faq p{
+	font-size: 14px;
+	line-height: 2;
+}
+.section-faq h2 {
+	margin-bottom: 32px;
+}
+.section-faq h4 {
+	text-align: left;
+}
+.faq li {
+	margin-bottom: 24px;
+}
+
+
+
 
 /* RESPONSIVE */
