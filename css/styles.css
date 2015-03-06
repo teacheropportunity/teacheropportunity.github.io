@@ -122,6 +122,9 @@ em {
 .learn-more-text-wrapper {
 	position: relative;
 }
+.learn-more-text-wrapper img {
+	margin-top: 60px;
+}
 .learn-more-wrapper span {
 	font-family: 'Merriweather', serif;
 	font-weight: 700;
@@ -284,7 +287,7 @@ em {
 .primary-cta {
 	background: #6ED171;
 	border-bottom: 6px solid #4F9E51;
-	padding: 18px 32px;
+	padding: 18px 38px 18px 32px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-size: 24px;
@@ -301,6 +304,9 @@ em {
 }
 .primary-cta:active {
 	background: #4F9E51;
+}
+.primary-cta img {
+	margin-left: 12px;
 }
 
 /* PARTNERS */
@@ -419,6 +425,9 @@ em {
 	.primary-cta {
 		font-size: 18px;
 		padding: 12px 18px;
+	}
+	.primary-cta img {
+		width: 8px;
 	}
 }
 @media screen and (max-width: 360px) {
