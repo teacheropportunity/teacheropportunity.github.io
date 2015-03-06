@@ -180,6 +180,9 @@ em {
 	padding: 48px 16px;
 	min-height: 900px;
 }
+.section-4steps {
+	min-height: 700px;
+}
 .section-howItWorks h1 {
 	color: #32756C;
 	margin: 0 auto;
