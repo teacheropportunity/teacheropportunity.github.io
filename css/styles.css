@@ -27,7 +27,7 @@ body {
 	padding: 64px;
 }
 .large-container {
-	max-width: 1400px;
+	max-width: 960px;
 	margin: 0 auto;
 }
 
@@ -156,16 +156,22 @@ em {
 }
 .left {
 	position: absolute;
-	max-width: 460px;
+	max-width: 360px;
+	margin-top: 32px;
 }
 .right {
 	margin-left: 500px;
 	position: absolute;
 	max-width: 1350px;
 	min-height: 750px;
+	margin-top: 32px;
 }
 .screenshot-wrapper {
 	position: absolute;
+	width: 600px;
+}
+.screenshot {
+	width: 100%;
 }
 .steps li {
 	margin-bottom: 16px;
@@ -178,6 +184,7 @@ em {
 	text-align: left;
 }
 .steps li>a{
+	position: relative;
 	background: #8DE3D8;
 	border-radius: 8px;
 	padding: 8px;
@@ -201,6 +208,7 @@ em {
 	color: white;
 }
 .number-decoration {
+	left: 8px;
 	position: absolute;
 	background: white;
 	border-radius: 100%;
@@ -217,12 +225,16 @@ em {
 }
 
 .instructions {
-	/*display: none;*/
+	display: none;
 	margin-top: 8px;
 }
 .instructions p {
 	font-size: 14px;
 	line-height: 24px;
+	margin-bottom: 16px;
+	font-weight: 400;
+	color: #35766C;
+	margin-left: 8px;
 }
 .instructions a {
 	color: white;

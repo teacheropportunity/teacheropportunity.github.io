@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>Check out Khan Academy's Math Missions</title>
-	<link rel="stylesheet" href="css/reset.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
     <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic|Open+Sans:700,300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 <div class="section-splash">
@@ -56,42 +56,44 @@
 		<h1>Here&apos;s How it Works</h1>
 		<div class="right">
 			<div class="screenshot-wrapper ">
-				<img src="images/howto-1.png">
+				<img class="ia-instruction-image screenshot" src="images/howto-1.png">
 			</div>
 		</div>
 	
 		<div class="left">
 			<ol class="steps">
 				<li>
-					<a class="is-active" href="#">
+					<a class="ia-instructions-trigger is-active" href="#">
 						<span class="number-decoration"><span>1</span></span>
 						<h4>Sign up on Khan Academy</h4>
 					</a>
-					<div class="instructions is-visible">
+					<div class="ia-instructions instructions is-visible">
 						<p>Go to <a href="http://khanacademy.org">KhanAcademy.org</a> and select &ldquo;Teachers, start here&rdquo; to begin.To be eligible for the rewards, you must use the same email address you use on Edmodo and not have previously assigned your students a math mission on Khan Academy.</p>
 					</div>
 				</li>
 
 				<li>
-					<a href="#"><span class="number-decoration"><span>2</span></span>
+					<a class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>2</span></span>
 						<h4>
 							Choose your grade&apos;s math mission	
 						</h4>
 					</a>
-					<div class="instructions">
+					<div class="ia-instructions instructions">
 						<p>
-							After you sign up, you&apos;ll be prompted to create your first class. Enter a name, like &ldquo;Mrs. Doe&apos;s 5th Graders.&rdquo; Then, you&rsquo;ll be taken to a screen where you can select a mission. To be eligible for this program, you must select the math mission appropriate for your students&rsquo; grade level (e.g. if you teach fifth grade, your fifth graders need to work through the fifth grade math mission).
+							After you sign up, you&apos;ll be prompted to create your first class. Enter a name, like &ldquo;Mrs. Doe&apos;s 5th Graders.&rdquo; Then, you&rsquo;ll be taken to a screen where you can select a mission.</p>
+						<p>
+							 To be eligible for this program, you must select the math mission appropriate for your students&rsquo; grade level (e.g. if you teach fifth grade, your fifth graders need to work through the fifth grade math mission).
 						</p>
 					</div>
 				</li>
 
 				<li>
-					<a href="#"><span class="number-decoration"><span>3</span></span>
+					<a class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>3</span></span>
 					<h4>
 						Invite your students
 					</h4>
 					</a>
-					<div class="instructions">
+					<div class="ia-instructions instructions">
 						<p>
 							Invite your students to your class via the email invite form on Khan Academy. Have your students check their email, accept your coach request, and create an account. Once they create an account and select an avatar, help them navigate to the mission by selecting the notification bell in the top right corner of the screen.
 						</p>
@@ -99,10 +101,10 @@
 				</li>
 
 				<li>
-					<a href="#"><span class="number-decoration"><span>4</span></span> 
+					<a class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>4</span></span> 
 					<h4>Help your students get through their mission</h4>
 					</a>
-					<div class="instructions">
+					<div class="ia-instructions instructions">
 						<p>
 							Your students will be asked to complete an initial mission warm-up and can then start working through their mission. You can track their progress by clicking &ldquo;student progress&rdquo; in your coach account. Look specifically at the bar marked &ldquo;20%,&rdquo; which displays students with 10-19% of the mission mastered.
 						</p>
@@ -110,17 +112,17 @@
 				</li>
 
 				<li>
-					<a href="#"><span class="number-decoration"><span>5</span></span>
+					<a class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>5</span></span>
 					<h4>
 						Receive your stipend
 					</h4>
 					</a>
-					<div class="instructions">
+					<div class="ia-instructions instructions">
 						<p>
 							We&apos;ll confirm that your students completed the mission warm-up and send you a $100 stipend via Paypal at the email you used in your Edmodo/Khan Academy account in June.
 						</p>
 						<p>
-							If at least 10 of your students get through 10% or more of the yearlong math mission, we’ll add an additional $400 to the stipend we&apos;ll email you via Paypal in June.
+							If at least 10 of your students get through 10% or more of the yearlong math mission, we&apos;ll add an additional $400 to the stipend we&apos;ll email you via Paypal in June.
 						</p>
 						<p>
 							You can spend the stipend just like an extra paycheck, reporting it as income on your tax return. The stipends are offered on a first come, first served basis to the first 500 teachers who accomplish the steps above. 
@@ -147,4 +149,6 @@
 </div>
 
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/effects.js"></script>
 </html>
