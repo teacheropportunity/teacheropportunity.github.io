@@ -97,10 +97,10 @@ em {
 	text-align: center;
 }
 .headline-wrapper {
-	margin-top: 300px;
+	margin-top: 200px;
 }
 .ie8 .headline-wrapper, .ie9 .headline-wrapper {
-	margin-bottom: 300px;
+	margin-bottom: 200px;
 }
 .headline-wrapper a {
 	color: #329FD8;
@@ -138,7 +138,7 @@ em {
 .learn-more-text-wrapper img {
 	margin-top: 60px;
 }
-.ie8 .learn-more-text-wrapper img, .ie9 .learn-more-text-wrapper img {
+.ie8 .learn-more-text-wrapper, .ie9 .learn-more-text-wrapper {
 	display: none;
 }
 .learn-more-wrapper span {
