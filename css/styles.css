@@ -99,7 +99,7 @@ em {
 .headline-wrapper {
 	margin-top: 300px;
 }
-.ie .headline-wrapper {
+.ie8 .headline-wrapper, .ie9 .headline-wrapper {
 	margin-top: 100px;
 }
 .headline-wrapper a {
