@@ -148,10 +148,14 @@ em {
 	position: absolute;
 	width: 96px;
 	height: 70px;
-	margin-top: 12px;
+	margin-top: 50%;
 	top: -48px;
 	left: 35px;
 
+}
+.ie8 .learn-more-wrapper span, .ie9 .learn-more-wrapper span {
+	margin-top: 24px;
+	top: 0;
 }
 
 /* INTRO */
