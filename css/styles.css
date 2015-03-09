@@ -100,7 +100,7 @@ em {
 	margin-top: 300px;
 }
 .ie8 .headline-wrapper, .ie9 .headline-wrapper {
-	margin-top: 100px;
+	margin-bottom: 300px;
 }
 .headline-wrapper a {
 	color: #329FD8;
@@ -137,6 +137,9 @@ em {
 }
 .learn-more-text-wrapper img {
 	margin-top: 60px;
+}
+.ie8 .learn-more-text-wrapper img, .ie9 .learn-more-text-wrapper img {
+	display: none;
 }
 .learn-more-wrapper span {
 	font-family: 'Merriweather', serif;
