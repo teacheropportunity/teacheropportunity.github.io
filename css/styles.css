@@ -36,6 +36,13 @@ body {
 	max-width: 960px;
 	margin: 0 auto;
 }
+.fullsize-container {
+	width: 100%;
+	height: 100vh;
+	padding: 16px;
+	position: relative;
+	text-align: center;
+}
 
 /* TYPOGRAPHY */
 body {
@@ -91,6 +98,9 @@ em {
 }
 .headline-wrapper {
 	margin-top: 300px;
+}
+.headline-wrapper a {
+	color: #329FD8;
 }
 .headline {
 	font-family: 'Merriweather', serif;
@@ -391,6 +401,7 @@ em {
 	.logo {
 		position: relative;
 		margin: 16px auto;
+		left: 0;
 	}
 	.container, .medium-container, .large-container, .section-partners {
 		padding: 32px;
