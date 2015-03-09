@@ -420,7 +420,7 @@ em {
 		padding: 0;
 	}
 	h1, .headline {
-		font-size: 24px;
+		font-size: 18px;
 	}
 	.headline {
 		padding: 6px;
@@ -458,11 +458,6 @@ em {
 	}
 }
 @media screen and (max-width: 360px) {
-	.primary-cta img {
-		display: none;
-	}
-}
-@media screen and (max-width: 360px) {
 	.container, .medium-container, .large-container, .section-partners {
 		padding: 24px;
 	}
@@ -475,9 +470,20 @@ em {
 	h5 {
 		text-align: left;
 	}
+	.primary-cta img {
+		display: none;
+	}
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-height: 670px) {
 	.headline-wrapper {
 		margin-top: 50px;
+	}
+}
+@media screen and (max-height: 460px) {
+	.headline-wrapper {
+		margin-top: 50px;
+	}
+	.learn-more-wrapper {
+		display: none;
 	}
 }
