@@ -99,6 +99,9 @@ em {
 .headline-wrapper {
 	margin-top: 300px;
 }
+.ie .headline-wrapper {
+	margin-top: 100px;
+}
 .headline-wrapper a {
 	color: #329FD8;
 }
