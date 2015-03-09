@@ -155,7 +155,7 @@ em {
 }
 .ie8 .learn-more-wrapper span, .ie9 .learn-more-wrapper span {
 	margin-top: 24px;
-	top: 0;
+	top: 16px;
 }
 
 /* INTRO */
