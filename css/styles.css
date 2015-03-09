@@ -402,7 +402,7 @@ em {
 		font-size: 24px;
 	}
 	.headline {
-		padding: 0;
+		padding: 6px;
 	}
 	h2, h3 {
 		font-size: 16px;
@@ -448,16 +448,15 @@ em {
 	h1, .headline {
 		font-size: 18px;
 	}
-	.headline {
-		background: none;
-		color: black;
-		padding: 0;
-	}
 	.headline-wrapper {
-		margin-top: 100px;
+		margin-top: 200px;
 	}
 	h5 {
 		text-align: left;
 	}
 }
+@media screen and (max-width: 320px) {
+	.headline-wrapper {
+		margin-top: 50px;
+	}
 }
