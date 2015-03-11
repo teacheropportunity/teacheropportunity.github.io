@@ -30,24 +30,18 @@ function getCookie(cname) {
     return "";
 }
 
-// function checkCookie() {
-//     var user = getCookie("username");
-//     if (user != "") {
-//         alert("Welcome again " + user);
-//     } else {
-//         user = prompt("Please enter your name:", "");
-//         if (user != "" && user != null) {
-//             setCookie("username", user, 365);
-//         }
-//     }
-// }
+function redirectUrl(whichPage) {
+	newUrl = "http://www.teacheropportunityprogram.com/" + whichPage + "opportunity.html"
+    window.location.href = newUrl;
+}
 
 function checkCookie() {
     var whichPage = getCookie("topLand");
     if (whichPage != "") {
-        alert("Welcome back to " + whichPage);
+        if (whichPage != getPage()) {
+        	redirectUrl();
+        }
     } else {
-    	debugger;
         whichPage = checkPage();
         if (whichPage != "" && whichPage != null) {
             setCookie("topLand", whichPage, 180);
