@@ -4,8 +4,8 @@ var checkPage = function(){
 		return 'edmodo';
 	} else if(thisPage.indexOf('khan') > -1) {
 		return 'khan';
-	} else if(thisPage.indexOf('teacher') > -1) {
-		return 'teacher';
+	} else if(thisPage.indexOf('classroom') > -1) {
+		return 'classroom';
 	} else {
 		return 'home';
 	}
@@ -16,7 +16,6 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
-    console.log(document.cookie);
 }
 
 function getCookie(cname) {
@@ -38,6 +37,7 @@ function redirectUrl(whichPage) {
 function checkCookie() {
     var whichPage = getCookie("topLand");
     if (whichPage != "") {
+    	// If cookie doesn't match current page, redirect to where user originally landed
         if (whichPage != checkPage()) {
         	redirectUrl(whichPage);
         }
