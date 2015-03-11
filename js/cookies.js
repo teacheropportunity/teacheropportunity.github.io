@@ -32,7 +32,7 @@ function getCookie(cname) {
 function checkCookie() {
     var whichPage = getCookie("topLand");
     if (whichPage != "") {
-        alert("you landed on " + whichPage + "but now you're here");
+        alert("you've been here before");
     } else {
         whichPage = checkPage();
         if (whichPage != "" && whichPage != null) {
