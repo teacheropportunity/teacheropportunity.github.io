@@ -1,4 +1,4 @@
-function whichPage(){
+function checkPage(){
 	var thisPage = window.location.href;
 	if(thisPage.indexOf('edmodo') > -1) {
 		return 'edmodo';
@@ -47,12 +47,11 @@ function checkCookie() {
     if (whichPage != "") {
         alert("Welcome back to " + whichPage);
     } else {
-        whichPage = whichPage();
+        whichPage = checkPage();
         if (whichPage != "" && whichPage != null) {
             setCookie("topLand", whichPage, 180);
         }
     }
 }
 
-whichPage();
 checkCookie();
