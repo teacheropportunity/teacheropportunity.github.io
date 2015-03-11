@@ -47,6 +47,7 @@ function checkCookie() {
     if (whichPage != "") {
         alert("Welcome back to " + whichPage);
     } else {
+    	debugger;
         whichPage = checkPage();
         if (whichPage != "" && whichPage != null) {
             setCookie("topLand", whichPage, 180);
