@@ -5,9 +5,7 @@ $(function(){
 		if(!($(this).hasClass('is-active'))){
 			// show or hide instructions
 			$('.ia-instructions-trigger').removeClass('is-active');
-			$('.ia-instructions').removeClass('is-visible');
 			$(this).addClass('is-active');
-			$(this).siblings('.ia-instructions').addClass('is-visible');
 
 			// switch instructional screenshot
 			var thisHowTo = $(this).attr('id');
