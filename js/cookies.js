@@ -30,7 +30,11 @@ function getCookie(cname) {
 }
 
 function redirectUrl(whichPage) {
-	newUrl = "http://www.teacheropportunityprogram.com/" + whichPage + "opportunity.html"
+	if (checkPage() != "home") {
+		newUrl = "http://www.teacheropportunityprogram.com/" + whichPage + "opportunity.html"
+	} else {
+		newUrl = "http://www.teacheropportunityprogram.com/"
+	}
     window.location.href = newUrl;
 }
 
