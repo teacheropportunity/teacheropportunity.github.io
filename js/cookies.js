@@ -16,6 +16,7 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires="+d.toUTCString();
     document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
+    console.log(document.cookie);
 }
 
 function getCookie(cname) {
@@ -29,10 +30,22 @@ function getCookie(cname) {
     return "";
 }
 
+// function checkCookie() {
+//     var user = getCookie("username");
+//     if (user != "") {
+//         alert("Welcome again " + user);
+//     } else {
+//         user = prompt("Please enter your name:", "");
+//         if (user != "" && user != null) {
+//             setCookie("username", user, 365);
+//         }
+//     }
+// }
+
 function checkCookie() {
     var whichPage = getCookie("topLand");
     if (whichPage != "") {
-        console.log("You first landed on " + whichPage);
+        alert("Welcome back to " + whichPage);
     } else {
         whichPage = checkPage();
         if (whichPage != "" && whichPage != null) {
