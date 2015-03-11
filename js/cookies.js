@@ -1,4 +1,4 @@
-function checkPage(){
+var checkPage = function(){
 	var thisPage = window.location.href;
 	if(thisPage.indexOf('edmodo') > -1) {
 		return 'edmodo';
@@ -53,5 +53,3 @@ function checkCookie() {
         }
     }
 }
-
-checkCookie();
