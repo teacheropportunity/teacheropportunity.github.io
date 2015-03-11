@@ -39,7 +39,7 @@ function checkCookie() {
     var whichPage = getCookie("topLand");
     if (whichPage != "") {
         if (whichPage != checkPage()) {
-        	redirectUrl();
+        	redirectUrl(whichPage);
         }
     } else {
         whichPage = checkPage();
