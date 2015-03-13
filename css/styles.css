@@ -556,6 +556,9 @@ input[type=email]:focus + span.reminder-text {
 		display: block;
 		width: 100%;
 	}
+	input[type=submit] {
+		-webkit-appearance: none;
+	}
 	.secondary-cta {
 		display: block;
 		width: 100%;
