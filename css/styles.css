@@ -23,13 +23,13 @@ body {
 
 /* LAYOUT */
 .container {
+	position: relative;
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 64px;
 }
 .medium-container {
 	max-width: 640px;
-	padding: 48px;
 	margin: 0 auto;
 }
 .large-container {
@@ -59,11 +59,8 @@ h1, h2, h3, h4, h5 {
 h1, h2, h3, h4 {
 	font-weight: 700;
 }
-h1 {
+h1, h2 {
 	font-size: 36px;
-}
-h2 {
-	font-size: 24px;
 }
 h3 {
 	font-size: 18px;
@@ -201,7 +198,7 @@ em {
 	min-height: 900px;
 }
 .section-4steps {
-	min-height: 700px;
+	min-height: 800px;
 }
 .section-howItWorks h1 {
 	color: #32756C;
@@ -375,6 +372,32 @@ input[type=email] {
 input[type=email]:focus {
 	border: 1px solid #329FD8;
 }
+span.reminder-text {
+	display: none;
+	font-weight: 400;
+	margin-left: 155px;
+	border-radius: 3px;
+	font-size: 12px;
+	padding: 8px;
+	background: #5A5A5A;
+	color: white;
+	position: absolute;
+}
+span.reminder-text:before {
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	border-bottom-color: #5A5A5A;
+	border-width: 6px;
+	margin-left: 8px;
+	margin-top: -20px;
+	position: absolute;
+	pointer-events: none;
+}
+input[type=email]:focus + span.reminder-text {
+	display: block;
+}
 
 /* PARTNERS */
 .section-partners {
@@ -405,6 +428,7 @@ input[type=email]:focus {
 
 /* FAQ */
 .section-faq {
+	padding: 36px;
 	display: none;
 	background: #ECEAEA;
 }
@@ -449,6 +473,12 @@ input[type=email]:focus {
 	}
 	.screenshot-wrapper, .logo-wall {
 		max-width: 100%;
+	}
+	span.reminder-text {
+		margin-left: 0;
+	}
+	span.reminder-text:before {
+		margin-left: 100px;
 	}
 
 @media screen and (max-width: 640px) {
