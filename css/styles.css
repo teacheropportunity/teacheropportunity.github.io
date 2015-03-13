@@ -304,25 +304,23 @@ em {
 }
 .section-getStarted h2 {
 	color: white;
-	margin-bottom: 18px;
+	margin-bottom: 8px;
 	font-weight: 900;
 }
-.primary-cta {
+.primary-cta, .secondary-cta {
+	border: none;
 	background: #6ED171;
-	border-bottom: 6px solid #4F9E51;
-	padding: 18px 38px 18px 32px;
+	cursor: pointer;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
-	font-size: 24px;
 	text-decoration: none;
 	color: white;
-	border-radius: 8px;
 	display: inline-block;
 	margin: 0 auto;
 	margin-bottom: 12px;
 	transition: all .3s;
 }
-.primary-cta:hover {
+.primary-cta:hover, .secondary-cta:hover {
 	background: #65BA67;
 }
 .primary-cta:active {
@@ -330,6 +328,51 @@ em {
 }
 .primary-cta img {
 	margin-left: 12px;
+}
+.primary-cta {
+	padding: 14px 38px 24px 32px;
+	font-size: 24px;
+	border-radius: 8px;
+	box-shadow: inset 0 -6px 0 0 #459451;
+	/*border-bottom: 6px solid #4F9E51;*/
+}
+.secondary-cta {
+	padding: 9px 18px 10px;
+	font-size: 16px;
+	border-radius: 3px;
+	box-shadow: inset 0 -3px 0 0 #459451;
+}
+
+/* EMAIL FORM*/
+form {
+	margin-top: 8px;
+}
+.email-label {
+	display: none;
+}
+input[type=email] {
+	border: 1px solid #d1d1d1;
+	width: 50%;
+	display: inline-block;
+	webkit-border-radius: 3px;
+	  -moz-border-radius: 3px;
+	  -ms-border-radius: 3px;
+	  -o-border-radius: 3px;
+	  border-radius: 3px;
+	webkit-box-shadow: inset 0 2px 2px 0px #EDF0F0;
+	  -moz-box-shadow: inset 0 2px 2px 0px #EDF0F0;
+	  box-shadow: inset 0 2px 2px 0px #EDF0F0;
+	margin: 16px 0;
+	font-size: 16px;
+	line-height: 1.4;
+	padding: 0 .75em;
+	height: 40px;
+	overflow: auto;
+	outline: none;
+	background: white;
+}
+input[type=email]:focus {
+	border: 1px solid #329FD8;
 }
 
 /* PARTNERS */
@@ -470,8 +513,21 @@ em {
 	h5 {
 		text-align: left;
 	}
+	.primary-cta {
+		display: block;
+		width: 100%;
+		padding: 16px 0 20px;
+	}
 	.primary-cta img {
 		display: none;
+	}
+	input[type=email] {
+		display: block;
+		width: 100%;
+	}
+	.secondary-cta {
+		display: block;
+		width: 100%;
 	}
 }
 @media screen and (max-height: 670px) {
