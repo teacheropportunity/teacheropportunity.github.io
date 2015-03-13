@@ -148,13 +148,13 @@
 <div class="section-getStarted">
 	<div class="container">
 		<h2>Ready to get started?</h2>
-		<h5>Register using the same email address you&#39;ll use to create your Khan Academy account so we can track your participation &mdash; this is also where we&#39;ll send your rewards</h5>
+		<h5 class="ia-cta-instruction">Register using the same email address you&#39;ll use to create your Khan Academy account so we can track your participation &mdash; this is also where we&#39;ll send your rewards</h5>
 		<script type="text/javascript">
 		var submitted=false;
 		</script>
-		<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){$('.primary-cta').show();}" style="display: none;"></iframe>
+		<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){$('.ia-show-on-submit').show(); $('.ia-form').hide(); $('.ia-cta-instruction').html('Great! You are registered! Now go sign up on Khan Academy');}" style="display: none;"></iframe>
 
-		<form action="https://docs.google.com/forms/d/1gGFboxEAYcwFNeZSYvGJsOJmjx7oIMC6EEzyBmkNgvQ/formResponse?embedded=true" method="POST" id="ss-form" onsubmit="submitted=true;" target="hidden_iframe">
+		<form class="ia-form" action="https://docs.google.com/forms/d/1gGFboxEAYcwFNeZSYvGJsOJmjx7oIMC6EEzyBmkNgvQ/formResponse?embedded=true" method="POST" id="ss-form" onsubmit="submitted=true;" target="hidden_iframe">
 			<ol role="list" class="ss-question-list" style="padding-left: 0">
 				<input type="hidden" name="entry.1613017288" value="Funding" class="ss-q-short" id="entry_1613017288" dir="auto" aria-label="" title="">
 
@@ -169,7 +169,7 @@
 				<input type="submit" name="submit" value="Register" id="ss-submit" class="jfk-button jfk-button-action secondary-cta">
 			</ol>
 		</form>
-		<a target="_blank" class="primary-cta" style="display: none;" href="http://khanacademy.org">Take me to Khan Academy <img src="images/icon-caret-right.png"> </a>
+		<a target="_blank" class="ia-show-on-submit primary-cta" style="display: none;" href="http://khanacademy.org">Take me to Khan Academy <img src="images/icon-caret-right.png"> </a>
 	</div>
 </div>
 
