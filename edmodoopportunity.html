@@ -28,7 +28,7 @@
 		<span class="headline">Get your students to use Khan&nbsp;Academy&#39;s free&nbsp;math&nbsp;resource</span>
 		<span class="headline">and we&#39;ll thank you with $500 in cash</span>
 	</div>
-	<a onclick="ga('send','event', 'learnMore', 'edmodo', 'click');" href="#intro">
+	<a onclick="ga('send','event', 'edmodo', 'learnMore', 'click');" href="#intro">
 		<div class="learn-more-wrapper">
 			<div class="learn-more-text-wrapper">
 				<span>Learn More</span>
@@ -84,18 +84,18 @@
 		<div class="left">
 			<ol class="steps">
 				<li>
-					<a id="howto-1" class="ia-instructions-trigger is-active" href="#">
+					<a id="howto-1" class="ia-instructions-trigger is-active" onclick="ga('send','event', 'edmodo', 'howItWorks', 'step1');" href="#">
 						<span class="number-decoration"><span>1</span></span>
 						<h4>Sign up on Khan Academy</h4>
 					</a>
 					<div class="ia-instructions instructions is-visible">
 						<p>After you register your email on this page, there will be a button that takes you to Khan Academy. Go there and select &ldquo;Teachers, start here&rdquo; to begin. To be eligible for the rewards, <strong>you must sign up on Khan Academy using the same email address you used to register here</strong> and not have previously assigned your students a math mission on Khan Academy.</p>
-						<p>The Teacher Opportunity Program will send you an email in April confirming that you have signed up with Khan Academy and are part of this program.  If you don&#39;t receive the email by April 20, <a href="mailto:edmodoopportunity@donorschoose.org">contact us.</a></p>
+						<p>The Teacher Opportunity Program will send you an email in April confirming that you have signed up with Khan Academy and are part of this program.  If you don&#39;t receive the email by April 20, <a href="mailto:edmodoopportunity@donorschoose.org" onclick="ga('send','event', 'edmodo', 'contactUsHowTo', 'click');">contact us.</a></p>
 					</div>
 				</li>
 
 				<li>
-					<a id="howto-2" class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>2</span></span>
+					<a id="howto-2" class="ia-instructions-trigger is-active" onclick="ga('send','event', 'edmodo', 'howItWorks', 'step2');" class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>2</span></span>
 						<h4>
 							Choose your grade&#39;s math mission	
 						</h4>
@@ -110,7 +110,7 @@
 				</li>
 
 				<li>
-					<a id="howto-3" class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>3</span></span>
+					<a id="howto-3" class="ia-instructions-trigger is-active" onclick="ga('send','event', 'edmodo', 'howItWorks', 'step3');" href="#"><span class="number-decoration"><span>3</span></span>
 					<h4>
 						Invite your students
 					</h4>
@@ -123,7 +123,7 @@
 				</li>
 
 				<li>
-					<a id="howto-4" class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>4</span></span> 
+					<a id="howto-4" class="ia-instructions-trigger is-active" onclick="ga('send','event', 'edmodo', 'howItWorks', 'step4');" href="#"><span class="number-decoration"><span>4</span></span> 
 					<h4>Help your students get through their mission</h4>
 					</a>
 					<div class="ia-instructions instructions">
@@ -134,7 +134,7 @@
 				</li>
 
 				<li>
-					<a id="howto-5" class="ia-instructions-trigger" href="#"><span class="number-decoration"><span>5</span></span>
+					<a id="howto-5" class="ia-instructions-trigger is-active" onclick="ga('send','event', 'edmodo', 'howItWorks', 'step5');" href="#"><span class="number-decoration"><span>5</span></span>
 					<h4>
 						Receive your stipend
 					</h4>
@@ -172,7 +172,7 @@
 				<label class="email-label" for="entry_1570067874">
 					Email Address
 				</label>
-				<input type="email" name="entry.1570067874" value="" class="ss-q-short" id="entry_1570067874" dir="auto" aria-label="Email Address  " title="" placeholder="Email Address">
+				<input type="email" name="entry.1570067874" value="" class="ss-q-short" id="entry_1570067874" dir="auto" aria-label="Email Address  " title="" placeholder="Email Address" onclick="ga('send','event', 'edmodo', 'emailField', 'click');">
 				<span class="reminder-text">
 					Remember to use this email address when you register on Khan Academy!
 				</span>
@@ -180,10 +180,10 @@
 				">
 				<input type="hidden" name="pageHistory" value="0">
 				<input type="hidden" name="fbzx" value="3323686566594068081">
-				<input type="submit" name="submit" value="Register" id="ss-submit" class="jfk-button jfk-button-action secondary-cta">
+				<input type="submit" name="submit" value="Register" id="ss-submit" class="jfk-button jfk-button-action secondary-cta" onclick="ga('send','event', 'edmodo', 'registerEmail', 'click');">
 			</ol>
 		</form>
-		<a target="_blank" class="ia-show-on-submit primary-cta" style="display: none;" href="http://khanacademy.org">Take me to Khan Academy <img src="images/icon-caret-right.png"> </a>
+		<a target="_blank" class="ia-show-on-submit primary-cta" style="display: none;" href="http://khanacademy.org" onclick="ga('send','event', 'edmodo', 'goToKhanAcademy', 'click');">Take me to Khan Academy <img src="images/icon-caret-right.png"> </a>
 	</div>
 </div>
 
@@ -193,7 +193,7 @@
 </div>
 
 <div class="section-contact">
-	<p>Have any questions? <a href="mailto:edmodoopportunity@donorschoose.org">Contact us</a> or view our <a href="#faq" class="ia-faq-trigger">FAQ</a></p>
+	<p>Have any questions? <a href="mailto:edmodoopportunity@donorschoose.org" onclick="ga('send','event', 'edmodo', 'contactUsFooter', 'click');">Contact us</a> or view our <a href="#faq" class="ia-faq-trigger" onclick="ga('send','event', 'edmodo', 'viewFAQ', 'click');">FAQ</a></p>
 </div>
 
 <div class="section-faq ia-faq" id="faq">
@@ -204,7 +204,7 @@
 				<h4>What is a mission?</h4>
 				<p>
 					A mission is simply a way on Khan Academy to help learners focus on content that is most meaningful to them.  Each math mission on Khan Academy provides complete coverage of a particular grade level or subject.  For more information, check out this
-					<a href="https://www.khanacademy.org/coach-res/reference-for-coaches/other-reference-materials/a/what-is-a-mission">article on Khan Academy.</a>
+					<a href="https://www.khanacademy.org/coach-res/reference-for-coaches/other-reference-materials/a/what-is-a-mission" onclick="ga('send','event', 'edmodo', 'externalLinkInFAQ', 'articleOnKhanAcademy');">article on Khan Academy.</a>
 				</p>
 			</li>
 			<li>
@@ -235,13 +235,13 @@
 			<li>
 				<h4>Where do I go if I need help using Khan Academy with my students?</h4>
 				<p>
-					Khan Academy has created a great online support resource that helps you learn how to get your class started on Khan Academy and shares best practices.  This is a great place to learn more about all the great learner and coach tools that are available as well as to understand the nuts and bolts of how to get your class started!  You can find these resources by going to: <a target="_blank" href="https://www.khanacademy.org/coach-res">khanacademy.org/coach-res</a>.
+					Khan Academy has created a great online support resource that helps you learn how to get your class started on Khan Academy and shares best practices.  This is a great place to learn more about all the great learner and coach tools that are available as well as to understand the nuts and bolts of how to get your class started!  You can find these resources by going to: <a target="_blank" href="https://www.khanacademy.org/coach-res" onclick="ga('send','event', 'edmodo', 'externalLinkInFAQ', 'coachRes');">khanacademy.org/coach-res</a>.
 				</p>
 			</li>
 			<li>
 				<h4>Where do I go if I have a problem with Khan Academy?</h4>
 				<p>
-					If you have a problem with Khan Academy, go to their <a href="https://khanacademy.zendesk.com/hc/en-us">Help Center</a>.  You can type in your questions or report bugs that you are finding as you work on Khan Academy.   
+					If you have a problem with Khan Academy, go to their <a href="https://khanacademy.zendesk.com/hc/en-us" onclick="ga('send','event', 'edmodo', 'externalLinkInFAQ', 'helpCenter');">Help Center</a>.  You can type in your questions or report bugs that you are finding as you work on Khan Academy.   
 				</p>
 			</li>
 		</ul>
