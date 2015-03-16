@@ -184,7 +184,7 @@ em {
 }
 .intro-content {
 	margin-left: 130px;
-	max-width: 438px;
+	max-width: 448px;
 }
 .intro-content p {
 	font-weight: 300;
@@ -502,7 +502,7 @@ input[type=email]:focus + span.reminder-text {
 	h2, h3 {
 		font-size: 16px;
 	}
-	h5, p {
+	h5, p, em {
 		font-size: 14px;
 	}
 	.section-splash {
