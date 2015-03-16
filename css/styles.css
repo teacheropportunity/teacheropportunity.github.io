@@ -76,9 +76,9 @@ strong {
 	font-weight: 700;
 }
 em {
-	font-style: italic;
-	font-size: 12px;
-	line-height: 2;
+	/*font-style: italic;*/
+	/*font-size: 12px;*/
+	line-height: 1.5;
 }
 
 /* SPLASH  */
@@ -195,10 +195,10 @@ em {
 	background: #5ED3C4;
 	position: relative;
 	padding: 48px 16px;
-	min-height: 900px;
+	min-height: 920px;
 }
 .section-4steps {
-	min-height: 800px;
+	min-height: 820px;
 }
 .section-howItWorks h1 {
 	color: #32756C;
