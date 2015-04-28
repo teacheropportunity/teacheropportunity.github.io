@@ -340,6 +340,10 @@ em {
 	border-radius: 3px;
 	box-shadow: inset 0 -3px 0 0 #459451;
 }
+.signup-closed {
+	display: block;
+	margin-top: 32px;
+}
 
 /* EMAIL FORM*/
 form {
