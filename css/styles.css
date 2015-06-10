@@ -7,6 +7,13 @@
 	-moz-osx-font-smoothing: grayscale;
  }
 
+.banner {
+	background: #FFA54B;
+	text-align: center;
+	padding: 16px 0 32px;
+	color: #545454;
+}
+
 body {
  	height: 100%;
  	width: 100%;
